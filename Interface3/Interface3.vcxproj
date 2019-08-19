@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4879D3CA-5259-4125-85E0-E7F85A6B3A89}</ProjectGuid>
+    <RootNamespace>Interface3</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="tec\R_RHESSys_info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CHESS.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="DisplayDlg.h" />
+    <ClInclude Include="DisplayView.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="Interface3.h" />
+    <ClInclude Include="Interface3Doc.h" />
+    <ClInclude Include="Interface3View.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ParaDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResultDlg.h" />
+    <ClInclude Include="SelectView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alloc.cpp" />
+    <ClCompile Include="allocate_annual_growth.cpp" />
+    <ClCompile Include="allocate_daily_growth.cpp" />
+    <ClCompile Include="allocate_daily_growth_Dickenson.cpp" />
+    <ClCompile Include="allocate_daily_growth_Waring.cpp" />
+    <ClCompile Include="canopy_stratum_daily_F_old.cpp" />
+    <ClCompile Include="canopy_stratum_daily_I.cpp" />
+    <ClCompile Include="canopy_stratum_growth.cpp" />
+    <ClCompile Include="check_zero_stores.cpp" />
+    <ClCompile Include="chess_channel_daily.cpp" />
+    <ClCompile Include="chess_climate_daily.cpp" />
+    <ClCompile Include="chess_patch_daily.cpp" />
+    <ClCompile Include="close_patch_output_files.cpp" />
+    <ClCompile Include="compute_annual_litfall.cpp" />
+    <ClCompile Include="compute_annual_turnover.cpp" />
+    <ClCompile Include="compute_atm_pres.cpp" />
+    <ClCompile Include="compute_capillary_rise.cpp" />
+    <ClCompile Include="compute_cwd_decay.cpp" />
+    <ClCompile Include="compute_deadleaf_turnover.cpp" />
+    <ClCompile Include="compute_delta_water.cpp" />
+    <ClCompile Include="compute_diffuse_radiative_fluxes.cpp" />
+    <ClCompile Include="compute_diffuse_radiative_PAR_fluxes.cpp" />
+    <ClCompile Include="compute_direct_radiative_fluxes.cpp" />
+    <ClCompile Include="compute_direct_radiative_PAR_fluxes.cpp" />
+    <ClCompile Include="compute_farq_psn.cpp" />
+    <ClCompile Include="compute_field_capacity.cpp" />
+    <ClCompile Include="compute_froot_litfall.cpp" />
+    <ClCompile Include="compute_ground_water_loss.cpp" />
+    <ClCompile Include="compute_growingseason_index.cpp" />
+    <ClCompile Include="compute_growth_resp.cpp" />
+    <ClCompile Include="compute_hourly_rain_stored.cpp" />
+    <ClCompile Include="compute_infiltration.cpp" />
+    <ClCompile Include="compute_layer_field_capacity.cpp" />
+    <ClCompile Include="compute_leaf_litfall.cpp" />
+    <ClCompile Include="compute_litter_rain_stored.cpp" />
+    <ClCompile Include="compute_Lstar.cpp" />
+    <ClCompile Include="compute_lwp_predawn.cpp" />
+    <ClCompile Include="compute_maint_resp.cpp" />
+    <ClCompile Include="compute_nonvascular_stratum_conductance.cpp" />
+    <ClCompile Include="compute_N_leached.cpp" />
+    <ClCompile Include="compute_potential_decomp.cpp" />
+    <ClCompile Include="compute_potential_exfiltration.cpp" />
+    <ClCompile Include="compute_potential_N_uptake.cpp" />
+    <ClCompile Include="compute_potential_N_uptake_Dickenson.cpp" />
+    <ClCompile Include="compute_potential_N_uptake_Waring.cpp" />
+    <ClCompile Include="compute_potential_rain_interception.cpp" />
+    <ClCompile Include="compute_potential_snow_interception.cpp" />
+    <ClCompile Include="compute_radiative_fluxes.cpp" />
+    <ClCompile Include="compute_rain_stored.cpp" />
+    <ClCompile Include="compute_ra_overstory.cpp" />
+    <ClCompile Include="compute_ra_surface.cpp" />
+    <ClCompile Include="compute_ra_understory.cpp" />
+    <ClCompile Include="compute_snow_stored.cpp" />
+    <ClCompile Include="compute_snow_sublimation.cpp" />
+    <ClCompile Include="compute_soil_water_potential.cpp" />
+    <ClCompile Include="compute_surface_heat_flux.cpp" />
+    <ClCompile Include="compute_toc_wind.cpp" />
+    <ClCompile Include="compute_transmissivity_curve.cpp" />
+    <ClCompile Include="compute_unsat_zone_drainage.cpp" />
+    <ClCompile Include="compute_varbased_flow.cpp" />
+    <ClCompile Include="compute_varbased_returnflow.cpp" />
+    <ClCompile Include="compute_vascular_stratum_conductance.cpp" />
+    <ClCompile Include="compute_year_day.cpp" />
+    <ClCompile Include="compute_z_final.cpp" />
+    <ClCompile Include="construct_basin_output_files.cpp" />
+    <ClCompile Include="construct_canopy_strata.cpp" />
+    <ClCompile Include="construct_channel_default.cpp" />
+    <ClCompile Include="construct_climate_defaults.cpp" />
+    <ClCompile Include="construct_command_line.cpp" />
+    <ClCompile Include="construct_gauge_output_files.cpp" />
+    <ClCompile Include="construct_landuse_defaults.cpp" />
+    <ClCompile Include="construct_patch.cpp" />
+    <ClCompile Include="construct_patch_output_files.cpp" />
+    <ClCompile Include="construct_reservoir_correponding_data.cpp" />
+    <ClCompile Include="construct_routing_topology_new.cpp" />
+    <ClCompile Include="construct_soil_defaults.cpp" />
+    <ClCompile Include="construct_stratum_defaults.cpp" />
+    <ClCompile Include="contruct_reservoir_default.cpp" />
+    <ClCompile Include="DisplayDlg.cpp" />
+    <ClCompile Include="DisplayView.cpp" />
+    <ClCompile Include="end_day_leap.cpp" />
+    <ClCompile Include="File_IO.cpp" />
+    <ClCompile Include="find_patch.cpp" />
+    <ClCompile Include="initialize_phenology_object.cpp" />
+    <ClCompile Include="Interface3.cpp" />
+    <ClCompile Include="Interface3Doc.cpp" />
+    <ClCompile Include="Interface3View.cpp" />
+    <ClCompile Include="julday.cpp" />
+    <ClCompile Include="key_compare.cpp" />
+    <ClCompile Include="Ksat_z_curve.cpp" />
+    <ClCompile Include="leaf_conductance_APAR_curve.cpp" />
+    <ClCompile Include="leaf_conductance_CO2_curve.cpp" />
+    <ClCompile Include="leaf_conductance_LWP_curve.cpp" />
+    <ClCompile Include="leaf_conductance_tavg_curve.cpp" />
+    <ClCompile Include="leaf_conductance_tmin_curve.cpp" />
+    <ClCompile Include="leaf_conductance_vpd_curve.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="match_patch.cpp" />
+    <ClCompile Include="open_climat_files.cpp" />
+    <ClCompile Include="output_basin_daily_growth.cpp" />
+    <ClCompile Include="output_basin_daily_hydrology.cpp" />
+    <ClCompile Include="output_gauge_daily_growth.cpp" />
+    <ClCompile Include="output_gauge_daily_hydrology.cpp" />
+    <ClCompile Include="output_patch_daily_growth.cpp" />
+    <ClCompile Include="output_patch_daily_hydrology.cpp" />
+    <ClCompile Include="out_basin_level_daily.cpp" />
+    <ClCompile Include="out_gauge_level_daily.cpp" />
+    <ClCompile Include="out_patch_level_daily.cpp" />
+    <ClCompile Include="ParaDlg.cpp" />
+    <ClCompile Include="parallel_basins_pches.cpp" />
+    <ClCompile Include="parallel_patch_daily.cpp" />
+    <ClCompile Include="parse_dyn_flag.cpp" />
+    <ClCompile Include="parse_phenology_type.cpp" />
+    <ClCompile Include="parse_veg_type.cpp" />
+    <ClCompile Include="patch_climate_initial.cpp" />
+    <ClCompile Include="patch_daily_final.cpp" />
+    <ClCompile Include="patch_land_initial.cpp" />
+    <ClCompile Include="patch_lateral_flow.cpp" />
+    <ClCompile Include="patch_radiation_daily.cpp" />
+    <ClCompile Include="penman_monteith.cpp" />
+    <ClCompile Include="read_daily_climatedata.cpp" />
+    <ClCompile Include="read_record.cpp" />
+    <ClCompile Include="recompute_gamma.cpp" />
+    <ClCompile Include="resolve_sminn_competition.cpp" />
+    <ClCompile Include="ResultDlg.cpp" />
+    <ClCompile Include="rewind_daily_clim.cpp" />
+    <ClCompile Include="SelectView.cpp" />
+    <ClCompile Include="snowpack_daily_F.cpp" />
+    <ClCompile Include="sort_patch_layers.cpp" />
+    <ClCompile Include="spaveg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="surface_daily_F.cpp" />
+    <ClCompile Include="update_C_stratum_daily.cpp" />
+    <ClCompile Include="update_decomp.cpp" />
+    <ClCompile Include="update_denitrif.cpp" />
+    <ClCompile Include="update_dissolved_organic_losses.cpp" />
+    <ClCompile Include="update_drainage_land.cpp" />
+    <ClCompile Include="update_drainage_stream.cpp" />
+    <ClCompile Include="update_gw_drainage.cpp" />
+    <ClCompile Include="update_litter_interception_capacity.cpp" />
+    <ClCompile Include="update_mortality.cpp" />
+    <ClCompile Include="update_nitrif.cpp" />
+    <ClCompile Include="update_N_stratum_daily.cpp" />
+    <ClCompile Include="update_phenology.cpp" />
+    <ClCompile Include="update_rooting_depth.cpp" />
+    <ClCompile Include="update_septic.cpp" />
+    <ClCompile Include="UserDlg.cpp" />
+    <ClCompile Include="valid_option.cpp" />
+    <ClCompile Include="yearday.cpp" />
+    <ClCompile Include="zero_patch_object.cpp" />
+    <ClCompile Include="zero_stratum_daily_flux.cpp" />
+    <ClCompile Include="zone_daily_final.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Interface3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Interface3.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Interface3.ico" />
+    <Image Include="res\Interface3Doc.ico" />
+    <Image Include="res\ooopic_1565517114.ico" />
+    <Image Include="res\ooopic_1565592639.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Interface3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
